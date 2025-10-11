@@ -12,6 +12,7 @@
     ./modules/nixosModules.nix
     ./modules/colmenaConfigurations.nix
     ./modules/nixpkgs.nix
+    ./modules/lib.nix
     ./modules/overlays.nix
     ./modules/packages.nix
     ./modules/perSystem.nix

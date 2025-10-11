@@ -10,6 +10,7 @@
     ./modules/moduleWithSystem.nix
     ./modules/nixosConfigurations.nix
     ./modules/nixosModules.nix
+    ./modules/colmenaConfigurations.nix
     ./modules/nixpkgs.nix
     ./modules/overlays.nix
     ./modules/packages.nix

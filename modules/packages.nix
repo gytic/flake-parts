@@ -11,7 +11,11 @@ in
 mkTransposedPerSystemModule {
   name = "packages";
   option = mkOption {
-    type = types.lazyAttrsOf types.package;
+    type =
+      let
+        pkgAttr = types.lazyAttrsOf types.package;
+      in
+      lib.types.either pkgAttr (types.lazyAttrsOf pkgAttr);
     default = { };
     description = ''
       An attribute set of packages to be built by [`nix build`](https://nixos.org/manual/nix/stable/command-ref/new-cli/nix3-build.html).
